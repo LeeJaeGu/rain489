@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/img_mystudio_background"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/player_header_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+<!--             <ImageView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_gravity="center" -->
+<!--                 android:background="@drawable/img_mystudio_top" /> -->
+			<TextView
+		    android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:text="MY STUDIO"
+        	android:textColor="#fff"
+        	android:textSize="25dp"
+        	android:background="#00ffffff"
+		    />
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:background="@null"
+                android:src="@drawable/back" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+			
+            <ImageView
+                android:id="@+id/bt_oneFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@drawable/btn_mystudio_photo_pressed"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="1dp"
+                android:visibility="gone"
+                />
+            <Button
+                android:id="@+id/bt_twoFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/btn_mystudio_video"
+                android:scaleType="fitXY"
+                android:text="VIDEO"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/bt_threeFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/btn_mystudio_voice_pressed"
+                android:scaleType="fitXY"
+                android:text="VOICE"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                />
+<!--             <ImageButton -->
+<!--                 android:id="@+id/bt_oneFragment" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:background="@null" -->
+<!--                 android:src="@drawable/btn_mystudio_photo" /> -->
+
+<!--             <ImageButton -->
+<!--                 android:id="@+id/bt_twoFragment" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:background="@null" -->
+<!--                 android:src="@drawable/btn_mystudio_video_stand" /> -->
+            
+<!--             <ImageButton -->
+<!--                 android:id="@+id/bt_threeFragment" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:background="@null" -->
+<!--                 android:src="@drawable/btn_mystudio_voice_stand" /> -->
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

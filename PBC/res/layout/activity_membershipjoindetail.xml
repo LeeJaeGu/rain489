@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/img_login_background" >
+
+    <FrameLayout
+        android:id="@+id/player_header_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+<!--         <ImageView -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:background="@drawable/img_menu_top" /> -->
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:background="@null"
+            android:src="@drawable/back" />
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        >
+		<TextView
+		    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:text="@string/service1" 
+            android:layout_marginBottom="5dp"
+            />
+        <ScrollView 
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#FFFFFF"
+            android:scrollbarStyle="outsideOverlay"
+            android:layout_weight="1"
+            >  
+        <TextView
+            android:id="@+id/notice1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/notice2" 
+            android:textColor="#000000"
+            />
+		</ScrollView>
+        <CheckBox
+            android:id="@+id/check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/check01"
+            android:text="@string/agree"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="right"
+            />
+		
+        <TextView
+		    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:text="@string/service2"
+            android:layout_marginBottom="5dp"
+            />
+        
+        <ScrollView 
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#FFFFFF"
+            android:scrollbarStyle="outsideOverlay"
+            android:layout_weight="1"
+            > 
+        <TextView
+            android:id="@+id/notice2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/notice1" 
+            android:textColor="#000000"
+            />
+		</ScrollView>
+		
+        <CheckBox
+            android:id="@+id/check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/check01"
+            android:text="@string/agree"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" 
+        >
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/cancelbutton" 
+            />
+
+        <ImageView
+            android:id="@+id/gojoin"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:src="@drawable/joinbutton" 
+            />
+    </LinearLayout>
+
+</LinearLayout>
